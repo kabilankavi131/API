@@ -1,0 +1,30 @@
+{
+
+ {
+ "Name":"Kabilan",
+ "Age":18,
+ "Dept":"AIDS"
+ },
+ {
+ "Name":"Issac",
+ "Age":19,
+ "Dept":"AIDS"
+ },
+ {
+ "Name":"Gokul",
+ "Age":19,
+ "Dept":"AIDS"
+ },
+ {
+ "Name":"Vallarasu",
+ "Age":20,
+ "Dept":"AIDS"
+ },
+ {
+ "Name":"Mithun",
+ "Age":18,
+ "Dept":"AIDS"
+ }
+
+
+}
