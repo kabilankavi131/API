@@ -54,12 +54,12 @@
 
 /*  This is for generating a new users */
 var newuser=()=>{
-    var user=Math.floor(Math.random() *14);
   fetch("https://kabilankavi131.github.io/API/user.json")
   .then(function(response){
     return response.json();
   })
   .then(function(data){
+    var user=Math.floor(Math.random() *)data.length;
   var img=document.getElementById("img");
   var name=document.getElementById("name");
   var level=document.getElementById("level");
