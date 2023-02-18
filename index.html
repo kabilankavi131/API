@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sololearn Random Users</title>
+</head>
+<body>
+    <center>
+        <h1>Sololearn Radom Users</h1>
+        <br /><br />
+   <div class="container"> 
+    <br />
+     <img id="img">
+     <br /><br />
+     <h2 id="name">User Name : </h2>
+     <h2 id="level">Level : </h2>
+     <h2 id="country">Country : </h2>
+     <h2 id="designation">Designation : </h2>
+     <button><a id="btn">Follow User<a></a></button>
+     <br /><br />
+   </div>
+   <br />
+   <button id="btn2" onclick="newuser()"><h3>Get New User</button></center></h3></button>
+    </center>
+</body>
+</html>
+
+<script>
+
+/* This is for first user page */
+  var user=Math.floor(Math.random() *14);
+  fetch("https://kabilankavi131.github.io/API/user.json")
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+  var img=document.getElementById("img");
+  var name=document.getElementById("name");
+  var level=document.getElementById("level");
+  var country=document.getElementById("country");
+  var designation=document.getElementById("designation");
+  var btn=document.getElementById("btn");
+  img.src=data[user]["img"];
+  name.innerHTML="User Name : "+data[user]["name"];
+  level.innerHTML="Level : "+data[user]["level"];
+  country.innerHTML="Country : "+data[user]["country"];
+  designation.innerHTML="Designation : "+data[user]["designation"];
+  btn.href=data[user]["profile"];
+  })
+
+
+
+/*  This is for generating a new users */
+var newuser=()=>{
+    var user=Math.floor(Math.random() *14);
+  fetch("https://kabilankavi131.github.io/API/user.json")
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+  var img=document.getElementById("img");
+  var name=document.getElementById("name");
+  var level=document.getElementById("level");
+  var country=document.getElementById("country");
+  var designation=document.getElementById("designation");
+  var btn=document.getElementById("btn");
+  img.src=data[user]["img"];
+  name.innerHTML="User Name : "+data[user]["name"];
+  level.innerHTML="Level : "+data[user]["level"];
+  country.innerHTML="Country : "+data[user]["country"];
+  designation.innerHTML="Designation : "+data[user]["designation"];
+  btn.href=data[user]["profile"];
+  })
+}
+
+
+
+
+
+
+
+
+
+     </script>
+
+<style>
+h1{
+    color:teal;
+}
+
+#img{
+    border-radius:50%;
+    height: 50%;
+    width: 50%;
+}
+button{
+    height:50px;
+    width:120px;
+    background-color:lightsteelblue;
+    border: none;
+    border-radius:50px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    height:80%;
+    width: 80%;
+    background-color:whitesmoke;
+    color:#252525;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#btn2{
+    background-color:palegreen;
+}
+</style>
