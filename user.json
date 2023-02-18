@@ -1,13 +1,32 @@
-{
-
-"Countries":[
+[
  {
-  "Name":"India",
-   "Capital":"Delhi"
-},
- {
-  "Name":"US",
-   "Capital":"Washington, D.C"
-}
- ]
-}
+  "user":"Kabilan",
+  "Age":18,
+  "Dept":"AI&DS",
+  "Native":"Nagai"
+ },
+  {
+  "user":"Issac",
+  "Age":19,
+  "Dept":"AI&DS",
+  "Native":"Ooty"
+ },
+  {
+  "user":"Gokul",
+  "Age":19,
+  "Dept":"AI&DS",
+  "Native":"Thirupathur"
+ },
+  {
+  "user":"Vallarasu",
+  "Age":20,
+  "Dept":"AI&DS",
+  "Native":"Palani"
+ },
+  {
+  "user":"Mithun",
+  "Age":19,
+  "Dept":"AI&DS",
+  "Native":"Ooty"
+ }
+]
