@@ -59,7 +59,7 @@ var newuser=()=>{
     return response.json();
   })
   .then(function(data){
-    var user=Math.floor(Math.random() *)data.length;
+    var user=Math.floor(Math.random() *data.length);
   var img=document.getElementById("img");
   var name=document.getElementById("name");
   var level=document.getElementById("level");
