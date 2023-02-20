@@ -342,6 +342,22 @@
     "level":3,
     "designation":"Student",
     "profile":"https://www.sololearn.com/profile/28349921"
+  },
+  {
+    "name":"Deepti Kushwaha",
+    "img":"https://blob.sololearn.com/avatars/28612f42-576e-4b56-ad0f-444323005f97.jpg",
+    "country":"India",
+    "level":2,
+    "designation":"Student",
+    "profile":"https://www.sololearn.com/profile/28390800"
+  },
+  {
+    "name":"Hongxuan",
+    "img":"https://blob.sololearn.com/avatars/6dacfb73-23cd-4ffd-8c5e-28f66f36b734.jpg",
+    "country":"China",
+    "level":9,
+    "designation":"Pro",
+    "profile":"https://www.sololearn.com/profile/27104844"
   }
 ]
 
